@@ -29,6 +29,10 @@ class SigningCoordinator @Inject constructor() {
     suspend fun requestSigning(request: SigningRequest): SigningResult {
         val pending = PendingSigning(request, CompletableDeferred())
         _currentSigning.value = pending
-        return pending.deferred.await()
+        return try {
+            pending.deferred.await()
+        } finally {
+            _currentSigning.value = null
+        }
     }
 }
