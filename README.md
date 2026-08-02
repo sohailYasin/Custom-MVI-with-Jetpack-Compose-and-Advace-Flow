@@ -1,4 +1,4 @@
-# Ether.fi – Transaction Signing Flow
+# Custom-MVI-with-Jetpack-Compose-and-Advace-Flow
 
 Android take-home assignment implementing a reusable transaction signing flow across Withdrawal, Transfer, and Swap operations.
 
