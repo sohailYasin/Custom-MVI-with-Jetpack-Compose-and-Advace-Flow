@@ -1,6 +1,6 @@
 # Custom-MVI-with-Jetpack-Compose-and-Advace-Flow
 
-Android take-home assignment implementing a reusable transaction signing flow across Withdrawal, Transfer, and Swap operations.
+Reusable Android transaction-signing flow built with Kotlin, Jetpack Compose, custom MVI, Coroutines, StateFlow, Hilt, and unit tests.
 
 ## Overview
 
