@@ -6,6 +6,18 @@ Reusable Android transaction-signing flow built with Kotlin, Jetpack Compose, cu
 
 When a user initiates a transaction, the feature processor fetches a quotation, suspends while the user authenticates on a shared signing screen, and resumes with the resulting signature to submit the transaction. The signing flow is a single shared feature triggered from any transaction screen.
 
+## Demo
+
+### Transaction Flow
+
+![Transaction flow](docs/screenshots/Screenshot_20260802_153143_EtherFi Signing.jpg)
+
+![Transafer screen](docs/screenshots/Screenshot_20260802_153202_EtherFi Signing.jpg)
+
+### Shared Signing Screen
+
+![Shared signing screen](docs/screenshots/Screenshot_20260802_153210_EtherFi Signing.jpg)
+
 ## Architecture
 
 The key design question — how does a feature processor suspend mid-coroutine and resume with a result from a separate screen — is solved using `SigningCoordinator`, a `@Singleton` that holds a `StateFlow<PendingSigning?>`. Each signing request bundles a `SigningRequest` with a `CompletableDeferred<SigningResult>`. The processor suspends by awaiting the deferred; the signing screen resolves it when the user authenticates or cancels.
