@@ -10,13 +10,13 @@ When a user initiates a transaction, the feature processor fetches a quotation, 
 
 ### Transaction Flow
 
-![Transaction flow](docs/screenshots/Screenshot_20260802_153143_EtherFi Signing.jpg)
+![Transaction flow](docs/screenshots/docs/screenshots/transaction-flow.jpg)
 
-![Transafer screen](docs/screenshots/Screenshot_20260802_153202_EtherFi Signing.jpg)
+![Transafer screen](docs/screenshots/transfer-screen.jpg)
 
 ### Shared Signing Screen
 
-![Shared signing screen](docs/screenshots/Screenshot_20260802_153210_EtherFi Signing.jpg)
+![Shared signing screen](docs/screenshots/shared-signing-screen.jpg)
 
 ## Architecture
 
